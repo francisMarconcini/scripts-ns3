@@ -99,7 +99,7 @@
      of13Helper->InstallSwitch (switchNode, switchPorts);
      of13Helper->CreateOpenFlowChannels ();
     
-     of13Helper.EnablePcapAll ("traceController");
+     of13Helper->EnableOpenFlowPcap("traceOpenFlowDoMano");
     
     // Install the TCP/IP stack into hosts nodes
      InternetStackHelper internet;
