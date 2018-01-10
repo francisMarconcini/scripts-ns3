@@ -141,10 +141,10 @@
  class ControllerFrancisTeste : public OFSwitch13Controller
 {
   protected:
-      void ComandoDoCabuloso(Ptr<const RemoteSwitch> swtch);
+      void HandshakeSuccessful(Ptr<const RemoteSwitch> swtch);
 };
 
-void ControllerFrancisTeste::ComandoDoCabuloso(Ptr<const RemoteSwitch> swtch)
+void ControllerFrancisTeste::HandshakeSuccessful(Ptr<const RemoteSwitch> swtch)
 {
- DpctlExecute (swtch, "stats-flow");
+ DpctlExecute (swtch, "port-desc");
 }
