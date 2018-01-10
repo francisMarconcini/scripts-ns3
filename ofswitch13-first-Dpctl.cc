@@ -146,5 +146,5 @@
 
 void ControllerFrancisTeste::ComandoDoCabuloso(Ptr<const RemoteSwitch> swtch)
 {
- DpctlExecute (swtch, "port-desc");
+ DpctlExecute (swtch, "stats-flow");
 }
